@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-<?php echo "<h1> Tim's World <h1>"; 
-      echo "<p> Review PHP Content </p>";
+<?php 
+$characterName = "Kirk";
+$characterAge = "25";
+echo "<h1> $characterName's World <h1>"; 
+echo "<hr>";
+echo "<p> He is $characterAge years old. </p>";
 ?>
     
 </body>
