@@ -7,15 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+
 <?php 
-$characterName = "Kirk";
-$characterAge = "25";
-echo "<h1> $characterName's World <h1>"; 
-echo "<hr>";
-echo "<p> He is $characterAge years old. </p>";
-echo '<hr>';
-$characterName = "Smith";
-echo "<h1>He becomes $characterName. </h1>"
+      $phrase = "To be or not to be";
+       $age = 30;
+       $gpa = 30.0;
+       $isMale = false;
 ?>
     
 </body>
