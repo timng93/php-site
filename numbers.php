@@ -8,13 +8,18 @@
 </head>
 <body>
 <?php
-      echo 5 + 9;
+     $num = 10;
+     $num += 25;
+      echo $num;
       echo "<br>";
-      echo 5.7 * 9;
+      echo pow(2,4);
       echo "<br>";
-      echo 10 % 3;
+      echo sqrt(144);
       echo "<br>";
-       echo (4 +5) * 10;
+      echo min(2,10);
+      echo "<br>";
+      echo ceil(4.1);
+
 ?>
     
 </body>
