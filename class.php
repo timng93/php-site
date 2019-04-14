@@ -11,22 +11,38 @@
 
 
    <?php
-   class Book {
-       var $title;
-       var $author;
-       var $pages;
+   class Movie {
+       public $title;
+       private $rating;
 
-       function __construct($aTitle, $aAuthor, $aPages) {
-           $this -> title = $aTitle;
-           $this -> author = $aAuthor;
-           $this -> Pages = $aPages;
+       function __construct($title, $rating) {
+           $this -> title = $title;
+           $this -> setRating($rating);
+           
+       }
+
+       function getRating() {
+           return $this -> rating;
+       }
+
+       function setRating($rating) {
+           if($rating == "G" || $rating == "PG") {
+               $this -> rating = $rating;
+           } 
+           else {
+               $this -> rating = "NR";
+           }
+
        }
    }
 
-   $book1 = new Book("Harry Potter", "JK Rowling", 400);
-   $book1-> title = "Hunger Games";
-   echo $book1 ->title;
-  
+   $movie1 = new Movie ("Hunger Games","R");
+
+   echo $movie1 -> getRating();
+
+
+   
+
    ?>
     
 </body>
