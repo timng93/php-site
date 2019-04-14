@@ -15,14 +15,17 @@
        var $title;
        var $author;
        var $pages;
+
+       function __construct($aTitle, $aAuthor, $aPages) {
+           $this -> title = $aTitle;
+           $this -> author = $aAuthor;
+           $this -> Pages = $aPages;
+       }
    }
 
-   $book1 = new Book;
-   $book1 -> title = "Harry Potter";
-   $book1 -> author = "JK Rowling";
-   $book1 -> pages = 400;
-
-   echo $book1 ->author;
+   $book1 = new Book("Harry Potter", "JK Rowling", 400);
+   $book1-> title = "Hunger Games";
+   echo $book1 ->title;
   
    ?>
     
